@@ -1,0 +1,146 @@
+.a {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f2e9e4;
+}
+
+.a-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  border: 2px blue solid;
+}
+
+.a-right {
+  flex: 1;
+}
+
+/* .a-card.bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #333;
+} */
+
+.a-card {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 3px green;
+  /* margin: 1em; */
+
+  /* width: 60%;
+  height: 70vh;
+  border-radius: 10%;
+  position: relative;
+  overflow: hidden; */
+}
+
+.a-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.a-award-img {
+  width: 12rem;
+  height: 12rem;
+  margin-left: 1em;
+  border-radius: 10%;
+  /* border: 3px solid red; */
+}
+
+.a-title {
+  font-weight: 400;
+}
+
+.a-sub {
+  margin: 20px 0px;
+}
+
+.a-desc{
+    font-weight: 300;
+}
+
+.a-award{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.a-award-texts{
+  display: flex;
+  align-items: center;
+    width: 75%;
+    /* border: green solid 3px; */
+}
+
+.a-award-title{
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/*GRID*/
+.skills-grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* border: 5px lightblue solid; */
+  max-width: 20em;
+}
+.skills-grid-item{
+  font-size: 4rem;
+  opacity: 0.8;
+ fill: currentColor;
+ color: #555;
+ cursor: pointer
+}
+.skills-grid-item:hover{
+  opacity: 1;
+  color: #333;
+}
+
+/* IMGS */
+.a-card-img{
+  max-width: 12em;
+  /* background-color: #59b256; */
+  background-color: #a2d2ff;
+  border-radius: 50%;
+  padding: 1em;
+  margin: 1em;
+
+  animation: move 5s ease-in infinite alternate;
+}
+@keyframes move {
+}
+
+@media screen and (max-width:790px) {
+    .a{
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 3em;
+    }
+
+    .a-left {
+      width: 100%;
+    }
+
+    .a-card {
+      height: 30vh;
+    }
+
+    .a-card.bg, .a-award {
+      display: none;
+    }
+
+    .a-right{
+      padding: 20px;
+    }
+}
