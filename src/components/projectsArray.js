@@ -8,17 +8,17 @@ export const projectsArray = [
   {
     id: 1,
     img: m,
-    h3: "MusicianShip Training",
-    p: "SPA for ear training (Original proyect)",
+    h3: "Musicianship Training",
+    p: "App for ear training. Original proyect idea, original code written from scratch.",
     link1: "https://tinchopapa56.github.io/MusicT/",
     link2: "https://github.com/tinchopapa56/MusicT",
   },
   {
     id: 2,
     img: alk,
-    h3: "E-commerce full-stack",
-    p: " Build with a team of 4 members as part of alchemy acceleration program (using git)",
-    link1: "http://lama.dev",
+    h3: "E-commerce (full-stack)",
+    p: " Build with a team of 4 members as part of alchemy acceleration program (using git).",
+    link1: "",
     link2: "https://github.com/Hernanbp/GoClothing",
   },
   {
