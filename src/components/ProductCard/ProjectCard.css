@@ -45,8 +45,12 @@
 
 /*---------------------------------------*/
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 650px) {
   .card {
-    max-width: 85%;
+    max-width: 70%;
+    font-size: 0.75rem;
+  }
+  .card-button{
+    font-size: 0.75rem;
   }
 }
