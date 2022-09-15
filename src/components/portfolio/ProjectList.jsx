@@ -12,7 +12,15 @@ export default function ProjectList () {
 
     <section className="portfolio-list"> 
       {projectsArray.map(project =>{
-        return <ProductCard img={project.img} h3={project.h3} p={project.p} link1={project.link1} link2={project.link2} />
+        return (
+        <ProductCard 
+          // img={project.img}
+          img={project.img}
+          h3={project.h3} 
+          p={project.p} 
+          link1={project.link1} 
+          link2={project.link2} 
+        /> )
       })}
     </section>
 

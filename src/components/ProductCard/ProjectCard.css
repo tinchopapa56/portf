@@ -11,7 +11,7 @@
   padding: 2em 0;
   border-radius: 5%;
 }
-.card-img{  max-width: 85%; }
+.card-img{  max-width: 95%; }
 
 .card-text{
   max-width: 85%;
@@ -34,16 +34,18 @@
 }
 
 .card-button{
-  /* border-radius: 7% ; */
+  /* border-radius: 15% ; */
   margin-right: 1em;
   border: none;
   background-color: black;
   color: white;
   font-weight: 500;
+  font-size: 1.15rem;
+  padding: 0.75em;
   cursor: pointer;
 }
 
-.card-git{    font-size: 150%;  }
+.card-git{    font-size: 350%;  }
 
 .card-a{
   display: flex;
@@ -52,6 +54,8 @@
   text-decoration: none;
   color: #020202;
 }
+.card-button:hover{  color: black;  background-color: white;}
+.card-git:hover{  color: black;  background-color: white;  border-radius: 50%;}
 
 /*---------------------------------------*/
 

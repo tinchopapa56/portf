@@ -24,7 +24,7 @@ export default function About(){
             <h1 className="a-title">About Me</h1>
             <p className="a-sub"> I am 21 years old and my best quality is my passion and perseverance: i am no stranger to hard work.</p>
           <p className="a-desc">Bachelor in Phsicology University of Buenos Aires (UBA).</p>
-          <p className="a-desc">Advanced English (C1), Native Spanish(C2), Intermediate German(B1).</p>
+          <p className="a-desc">Proficient English (C2), Native Spanish(C2), Intermediate German(B1).</p>
           <p className="a-desc">Hobbies: Guitar, Gym, TaeKwonDo.</p>
           <h3 id="about-h3">Skills:</h3>
             </div>
