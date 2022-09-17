@@ -9,7 +9,7 @@ export default function ProjectCard (props) {
 
         <h3 className="card-h3">{props.h3}</h3>
         <p className="card-p">{props.p}</p> 
-          <a className="card-a" href={props.link1}>
+          <a className="card-a" href={props.link1} target="_blank">
             <button className="card-button">See it Live!</button>
           </a>
           {/* <a className="card-a" href={props.link2}>
