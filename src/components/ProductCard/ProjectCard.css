@@ -36,10 +36,9 @@
   cursor: pointer;
 }
 
-/* .card-git{    font-size: 250%;  } */
-
 .card-a{
-  margin: 1em auto;
+  margin: 0 auto;
+  font-size: 200%;
   text-decoration: none;
   color: #020202;
 }
