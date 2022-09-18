@@ -9,6 +9,9 @@
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
+.card:hover{
+  transform: scale(1.05) ;
+}
 .card-img{ 
   max-width: 100%;
 }
@@ -33,10 +36,9 @@
   cursor: pointer;
 }
 
-/* .card-git{    font-size: 250%;  } */
-
 .card-a{
-  margin: 1em auto;
+  margin: 0 auto;
+  font-size: 200%;
   text-decoration: none;
   color: #020202;
 }
