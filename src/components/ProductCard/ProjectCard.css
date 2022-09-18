@@ -9,6 +9,9 @@
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
+.card:hover{
+  transform: scale(1.05) ;
+}
 .card-img{ 
   max-width: 100%;
 }
