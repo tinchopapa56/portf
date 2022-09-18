@@ -5,6 +5,9 @@ import Address from "../../img/address.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
+import IG from "../svgs/instagram.svg"
+import Linkedin from "../svgs/linkedin.svg"
+import Git from "../svgs/github.svg"
 
 const Contact = () => {
   const formRef = useRef();
@@ -30,22 +33,26 @@ const Contact = () => {
           <h1 className="c-title">Let's get in touch!</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
-              <FontAwesomeIcon icon="fa-brands fa-instagram" />
-              https://www.instagram.com/martin_labastie/
-              IG
+              <a href="https://www.instagram.com/martin_labastie/" target="_blank">
+                <img src={IG} alt="" className="c-icon" />
+              </a>
+              martin_labastie
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
-              mail@gmail.com
+                <img className="c-icon" src={Email} alt="" />
+              <p style={{lineBreak: "strict"}}>martinlabastie.p@gmail.com</p>
             </div>
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
+              <a href="https://www.linkedin.com/in/martin-labastie/" target="_blank">
+                <img src={Linkedin} alt="" className="c-icon" />
+              </a>
               Linkedin 
             </div>
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
-              Github 
+              <a href="https://github.com/tinchopapa56" target="_blank">
+                <img src={Git} alt="" className="c-icon" />
+              </a>
+              tinchopapa56 
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
