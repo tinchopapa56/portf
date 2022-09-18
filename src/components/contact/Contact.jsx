@@ -31,7 +31,8 @@ const Contact = () => {
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
-              {/* https://www.instagram.com/martin_labastie/ */}
+              <FontAwesomeIcon icon="fa-brands fa-instagram" />
+              https://www.instagram.com/martin_labastie/
               IG
             </div>
             <div className="c-info-item">
