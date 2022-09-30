@@ -18,8 +18,8 @@ export const projectsArray = [
     img: alk,
     h3: "E-commerce (full-stack)",
     p: " Build with a team of 4 members as part of alchemy acceleration program (using git).",
-    link2: "",
-    link1: "https://github.com/Hernanbp/GoClothing",
+    link1: "https://go-clothing-twxt.vercel.app/",
+    link2: "https://github.com/Hernanbp/GoClothing",
   },
   {
     id: 3,
