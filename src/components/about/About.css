@@ -1,7 +1,11 @@
 .a{
     display: flex;
     justify-content: center;
-    background-color: #f2e9e4;
+    color: white;
+    /* background-color: #f2e9e4; */
+    background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
+    /* background-image: linear-gradient(to right bottom, #55ccff, #53afdc, #4e93ba, #477998, #3e5f77); */
+    /* background-image: linear-gradient(to right bottom, #55ccff, #53afdc, #4e93ba, #477998, #3e5f77); */
 }
 .about-columns{
     display: flex;
@@ -60,12 +64,12 @@
 
 .thinker{  width: 10em;    margin-top: 1em;  }
 
-@media (max-width:769px) {
+@media (max-width:1280px) {
     #column-left{
         display: none;
     }
 }
-@media (max-width:425px) {
+@media (max-width:768px) {
     .a{
         flex-direction: column;
         align-items: center;

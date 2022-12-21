@@ -1,7 +1,8 @@
 .c {
   position: relative;
   /* background-color: #fefae0; */
-  background-color: #f2e9e4;
+  /* background-color: #f2e9e4; */
+  background-image: linear-gradient(to right bottom, #fcb057, #fec259, #ffd45e, #fde666, #f9f871);
 }
 
 .c-bg {
