@@ -243,7 +243,6 @@
 }
 .star:nth-child(11) {
   /* color: red; */
-  background-color: red;
   top: calc(32% - 200px);
   /* left: calc(70% - 1px); */
   /* left: calc(30% - 1px); //tablet */
@@ -285,6 +284,12 @@
 }
 .star:nth-child(15)::before, .star:nth-child(15)::after {
   animation-delay: 850ms;
+}
+.star:nth-child(even){
+  background-color: red;
+}
+.star:nth-child(17){
+  left: calc(1% - 1px);
 }
 
 

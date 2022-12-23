@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Intro = () => {
   // const [stars, setstars] = useState(stars)
-  const stars = [1, 2, 3, 4, 5, 6, 7,  9, 10, 11, 12, 13, 14, 15]
+  const stars = [1, 2, 3, 4, 5, 6, 7,  9, 10, 11, 12, 13, 14, 15, 16,]
 
   return (
     <div className="i">

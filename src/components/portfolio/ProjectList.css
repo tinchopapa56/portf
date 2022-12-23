@@ -46,7 +46,12 @@ main > section > span{ font-size: 1.55rem }
   gap: 3rem;
   margin-bottom: 8rem;
 }
-
+@media only screen and (max-width:500px){
+  .cards-container {
+    font-size: 0.5rem;
+    padding: 0 1em;
+  }
+}
 @media only screen and (min-width: 1680px) {
   .cards-container {
     grid-template: auto / repeat(2, 1fr);
