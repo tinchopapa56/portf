@@ -31,10 +31,30 @@ main > section > span{ font-size: 1.55rem }
   grid-template-columns: repeat(auto-fill, minmax(10rem,1fr)); /* */
 }
 
-@media (max-width: 800px) {
+
+
+
+
+
+
+
+
+.cards-container {
+  display: grid;
+  grid-template: auto / 1fr;
+  padding: 0 4rem;
+  gap: 3rem;
+  margin-bottom: 8rem;
 }
-@media (min-width: 1150px) {
-  .portfolio-list{
-    grid-template-columns: repeat(auto-fill, minmax(25rem,1fr)); /* */
+
+@media only screen and (min-width: 1680px) {
+  .cards-container {
+    grid-template: auto / repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .cards-container {
+    grid-template: auto / repeat(3, 1fr);
   }
 }
