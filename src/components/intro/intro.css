@@ -111,33 +111,33 @@
   height: 100%;
   clip-path: circle(50% at 50% 50%);
   border-radius: 50%;
-
   background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
-  
   transform: rotateZ(45deg);
 } */
 
-.sky-container {
-  background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
-}
 
-
-
-.star {
+/* .star {
   position: absolute;
   top: 1%;
   left: 80%;
   height: 2px;
-  /* transform: rotateX(45deg); */
-  /* height: 12px; */
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
   filter: drop-shadow(0 0 6px #699bff);
+  animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+} */
+.star {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+  filter: drop-shadow(0 0 6px #699bff);
+  transform: matrix(100px, 10, 1 100px, 100px);
   animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
 }
 
 .star::before, .star::after {
   position: absolute;
-  content: '';
+  /* content: 'dev'; */
+  /* content: ""; */
   top: calc(50% - 1px);
   right: 0;
   height: 2px;
@@ -155,6 +155,7 @@
   top: calc(50% - 200px);
   left: calc(50% - 600px);
   animation-delay: 650ms;
+  transform: skew(20deg,10deg);
 }
 .star:nth-child(1)::before, .star:nth-child(1)::after {
   animation-delay: 650ms;
@@ -163,7 +164,6 @@
 .star:nth-child(2) {
   top: calc(50% - -350px);
   left: calc(-5% - 100px);
-  
   animation-delay: 50ms;
 }
 .star:nth-child(2)::before, .star:nth-child(2)::after {
@@ -204,42 +204,88 @@
   left: calc(5% - 200px);
   animation-delay: 650ms;
 }
-.star:nth-child(6)::before, .star:nth-child(1)::after {
-  animation-delay: 650ms;
+.star:nth-child(6)::before, .star:nth-child(6)::after {
+  animation-delay: 1650ms;
 }
 .star:nth-child(7) {
   top: calc(50% - 300px);
   left: calc(5% - 400px);
   animation-delay: 650ms;
 }
-.star:nth-child(7)::before, .star:nth-child(1)::after {
-  animation-delay: 650ms;
+.star:nth-child(7)::before, .star:nth-child(7)::after {
+  animation-delay: 250ms;
 }
 .star:nth-child(8) {
-  top: calc(50% - 500px);
-  left: calc(50 - 600px);
-  animation-delay: 650ms;
+  /* top: calc(90%);
+  left: calc(1px);
+  background-color: red;
+  animation-delay: 350ms; */
+  display: none;
 }
-.star:nth-child(8)::before, .star:nth-child(1)::after {
-  animation-delay: 650ms;
+.star:nth-child(8)::before, .star:nth-child(8)::after {
+  animation-delay: 400ms;
 }
 .star:nth-child(9) {
   top: calc(50% - 700px);
   left: calc(5% - 800px);
   animation-delay: 650ms;
 }
-.star:nth-child(9)::before, .star:nth-child(1)::after {
-  animation-delay: 650ms;
+.star:nth-child(9)::before, .star:nth-child(9)::after {
+  animation-delay: 450ms;
 }
 .star:nth-child(10) {
   top: calc(50% - 900px);
-  left: calc(25% - 1900px);
+  left: calc(25% - 1100px);
+  animation-delay: 120ms;
+}
+.star:nth-child(10)::before, .star:nth-child(10)::after {
+  animation-delay: 140ms;
+}
+.star:nth-child(11) {
+  /* color: red; */
+  background-color: red;
+  top: calc(32% - 200px);
+  /* left: calc(70% - 1px); */
+  /* left: calc(30% - 1px); //tablet */
+  left: calc(-5% - 1px);
+  animation-delay: 210ms;
+}
+.star:nth-child(11)::before, .star:nth-child(11)::after {
   animation-delay: 650ms;
 }
-.star:nth-child(10)::before, .star:nth-child(1)::after {
+.star:nth-child(12) {
+  top: calc(50% - 700px);
+  left: calc(25% - 280px);
+  animation-delay: 1200ms;
+}
+.star:nth-child(12)::before, .star:nth-child(12)::after {
+  animation-delay: 1050ms;
+}
+.star:nth-child(13) {
+  top: calc(50% - 900px);
+  left: calc(25% - 190px);
+  animation-delay: 690ms;
+}
+.star:nth-child(13)::before, .star:nth-child(13)::after {
+  animation-delay: 990ms;
+}
+.star:nth-child(14) {
+  top: calc(50% - 300px);
+  left: calc(25% - 450px);
+  
+  animation-delay: 850ms;
+}
+.star:nth-child(14)::before, .star:nth-child(14)::after {
   animation-delay: 650ms;
 }
-
+.star:nth-child(15) {
+  top: calc(50% - 900px);
+  left: calc(25% - 100px);
+  animation-delay: 350ms;
+}
+.star:nth-child(15)::before, .star:nth-child(15)::after {
+  animation-delay: 850ms;
+}
 
 
 
@@ -247,6 +293,7 @@
 @keyframes tail {
   0% {
     width: 0;
+    /* transform: rotate(20deg); */
   }
   
   30% {
@@ -295,12 +342,12 @@
     font-size: 4.5;
   }
   .i-img{
-    width: 800px;
-    height: 800px;
+    width: 750px;
+    height: 750px;
   }
   .i-bg{
-    width: 800px;
-    height: 800px;
+    width: 750px;
+    height: 750px;
   }
 }
 /*TABLET y CELULARES*/
@@ -330,6 +377,10 @@
   .i-bg{
     width: 300px;
     height: 300px;
+  }
+  .star{
+    /* display: none; */
+    /* transition:  translateY(50%); */
   }
 } 
 
