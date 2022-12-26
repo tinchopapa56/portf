@@ -35,10 +35,11 @@ export const projectsArray = [
   {
     id: 5,
     img: b2,
-    h3: "Gonzi Cuts",
-    p: "Responsive Landing page for Local Bussiness",
+    h3: "ML Challenge",
+    p: "Front-end -take home project- built with Chakra UI & Typescriptesponsive Landing page for Local Bussiness",
     link1: "",
-    tag: "Landing Page"
+    tag: "🏆 Challenge",
+    bg: "yellow"
   },
   
 ];

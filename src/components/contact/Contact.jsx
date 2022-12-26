@@ -12,8 +12,9 @@ import Git from "../svgs/github.svg"
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false)
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
+  // const theme = useContext(ThemeContext);
+  // const darkMode = theme.state.darkMode;
+  const darkMode = false;
 
   const handleSubmit = (e) => {
     e.preventDefault();

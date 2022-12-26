@@ -82,9 +82,10 @@
   padding: 1em;
   cursor: pointer;
   background: transparent;
+  color: black;
   border: 1px solid #91C9FF;
   outline: none;
-  transition: 0.5s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
   svg {
@@ -95,22 +96,30 @@
     stroke: #fff;
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
+    transition: 0.15s ease-in-out;
   }
 
   .btn:hover {
-    transition: 0.5s ease-in-out;
+    transition: 0.35s ease-in-out;
     background: #4F95DA;
+    color:white
   }
-
+  .btn span:hover {
+    /* padding: 1em; */
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+  }
   .btn:hover svg {
     stroke-dashoffset: -480;
   }
 
   .btn span {
-    color: white;
+    transition: 0.15s ease-in;
+    padding: 1em;
+    color: black;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
   }
 
 /* SMALL DEVICES */
