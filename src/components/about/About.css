@@ -50,18 +50,17 @@
 /* 3d */
 
 .rotator {
-    /* position: absolute; */
+    padding: 2em;
     left: 0;
     right: 0;
     margin: auto;
     width: 55%;
-    height: 150px;
+    height: 200px;
+
     transform-style: preserve-3d;
     animation: roter 25s linear infinite;
   }
-  .rotator:hover {
-    animation-play-state: paused;
-  }
+  .rotator:hover {animation-play-state: paused; cursor: pointer}
   @keyframes roter {
     from {
       transform: rotateY(0deg);
@@ -75,14 +74,12 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    /* border: 2px solid #333; */
   }
   .items:hover img {
-    transform: scale(1.2);
+    transform: scale(1.25);
   }
   .items img {
     height: 100%;
-    /* width: 100%; */
     width: 200px;
     transition: all 3s ease;
   }
@@ -114,3 +111,48 @@
   .items:nth-child(9) {
     transform: rotateY(calc(40deg * 9)) translateZ(300px);
   }
+
+
+  @media screen and (min-width: 1px) and (max-width: 519px) {
+    .rotator {
+        padding: 0m;
+        width: 2%;
+        height: 50px;
+      }
+      .items {
+        height: 50%;
+        width: 100%;
+      }
+      .items img {
+        width: 100%;
+      }
+}
+@media screen and (min-width: 520px) and (max-width: 999px) {
+    .rotator {
+        width: 20%;
+        height: 125px;
+    }
+    .items {
+        position: absolute;
+        height: 80%;
+        width: 100%;
+      }
+      .items img {
+        height: 100%;
+        width: 100%;
+        transition: all 3s ease;
+    }
+}
+@media (max-width: 1000px) {
+    .a{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-columns{
+        flex-direction: row;
+    }
+    .absolute-column-img{
+        margin: 0.5em;
+        width: 40%;
+    }
+}

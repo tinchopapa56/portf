@@ -20,10 +20,10 @@ export default function About(){
     return(
     <article className="a">
          
-        <section className="about-columns" id="column-left"> 
+        {/* <section className="about-columns" id="column-left"> 
         <img className="absolute-column-img" src={Meditation} alt="Meditation" />
             <img className="absolute-column-img" src={Gym} alt="Gym" />
-        </section>
+        </section> */}
 
         <section className="about-center">
         <div className="about-text"> 
