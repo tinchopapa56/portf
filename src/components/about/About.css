@@ -2,10 +2,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    /* background-color: #f2e9e4; */
     background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
-    /* background-image: linear-gradient(to right bottom, #55ccff, #53afdc, #4e93ba, #477998, #3e5f77); */
-    /* background-image: linear-gradient(to right bottom, #55ccff, #53afdc, #4e93ba, #477998, #3e5f77); */
 }
 .about-columns{
     display: flex;
@@ -45,23 +42,6 @@
     border-radius: 50%;
     padding: 1em;
     animation: shake 5s ease-in infinite alternate;
-}
-.skills-grid{
-    display: grid;
-    width: 100%;
-    gap: 0.5rem;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 1em 2em 0 2em;
-}
-.skills-grid-item{
-    font-size: 5rem;
-    width: 100%;
-    opacity: 0.8;
-}
-.skills-grid-item:hover{
-    opacity: 1;
-    color: #333;
 }
 
 .thinker{  width: 10em;    margin-top: 1em;  }
