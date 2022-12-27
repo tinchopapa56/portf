@@ -39,7 +39,9 @@
 
 .absolute-column-img{
     width: 85%;
-    background-color: #a2d2ff;
+    margin-bottom: 1em;
+    /* background-color: #a2d2ff; */
+    background-image: linear-gradient(to right bottom, #fcb057, #fec259, #ffd45e, #fde666, #f9f871);
     border-radius: 50%;
     padding: 1em;
     animation: shake 5s ease-in infinite alternate;
@@ -64,22 +66,71 @@
 
 .thinker{  width: 10em;    margin-top: 1em;  }
 
-@media (max-width:1280px) {
-    #column-left{
-        display: none;
+
+/* 3d */
+
+.rotator {
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 55%;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: roter 25s linear infinite;
+  }
+  .rotator:hover {
+    animation-play-state: paused;
+  }
+  @keyframes roter {
+    from {
+      transform: rotateY(0deg);
     }
-}
-@media (max-width:768px) {
-    .a{
-        flex-direction: column;
-        align-items: center;
+    to {
+      transform: rotateY(360deg);
     }
-    .about-columns{
-        /* flex-direction: row; */
-        display: none;
-    }
-    .absolute-column-img{
-        margin: 0.5em;
-        width: 40%;
-    }
-}
+  }
+  .items {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* border: 2px solid #333; */
+  }
+  .items:hover img {
+    transform: scale(1.2);
+  }
+  .items img {
+    height: 100%;
+    /* width: 100%; */
+    width: 200px;
+    transition: all 3s ease;
+  }
+
+  .items:first-child {
+    transform: rotateY(calc(40deg * 1)) translateZ(300px);
+  }
+  .items:nth-child(2) {
+    transform: rotateY(calc(40deg * 2)) translateZ(300px);
+  }
+  .items:nth-child(3) {
+    transform: rotateY(calc(40deg * 3)) translateZ(300px);
+  }
+  .items:nth-child(4) {
+    transform: rotateY(calc(40deg * 4)) translateZ(300px);
+  }
+  .items:nth-child(5) {
+    transform: rotateY(calc(40deg * 5)) translateZ(300px);
+  }
+  .items:nth-child(6) {
+    transform: rotateY(calc(40deg * 6)) translateZ(300px);
+  }
+  .items:nth-child(7) {
+    transform: rotateY(calc(40deg * 7)) translateZ(300px);
+  }
+  .items:nth-child(8) {
+    transform: rotateY(calc(40deg * 8)) translateZ(300px);
+  }
+  .items:nth-child(9) {
+    transform: rotateY(calc(40deg * 9)) translateZ(300px);
+  }

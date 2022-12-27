@@ -4,11 +4,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 2em;
-  /* background-color: #fefae0; */
   background-image: linear-gradient(to right bottom, #fcb057, #fec259, #ffd45e, #fde666, #f9f871);
-  /* background-image: linear-gradient(to right bottom, #592458, #802f5f, #a53f62, #c55460, #df6f5c); */
-  /* background-image: linear-gradient(to right bottom, #e6e5eb, #cec8ef, #b5abf2, #9b8ff3, #7e73f4); */
-  /* border: plum solid 5px; */
 }
 main > section > h1{ font-size: 2.5rem; }
 main > section > span{ font-size: 1.55rem }
