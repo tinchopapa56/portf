@@ -41,5 +41,14 @@ export const projectsArray = [
     tag: "🏆 Challenge",
     bg: "yellow"
   },
+  {
+    id: 6,
+    img: b2,
+    h3: "Start up Landing page",
+    p: "Responsive Landing page built with TYPESCRIPT and CHAKRA UI in aproximately 4 hours",
+    link1: "",
+    tag: "🏆 Challenge",
+    bg: "yellow"
+  },
   
 ];
