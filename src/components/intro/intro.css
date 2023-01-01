@@ -137,7 +137,7 @@
 .star::before, .star::after {
   position: absolute;
   /* content: 'dev'; */
-  /* content: ""; */
+  content: "";
   top: calc(50% - 1px);
   right: 0;
   height: 2px;

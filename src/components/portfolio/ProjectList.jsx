@@ -15,11 +15,13 @@ export default function ProjectList () {
           // title, description, cover, tag, url, background = "#D2F3F4"}
           return (
           <ProductCardNEW
-            title={project.h3}
-            description={project.p}
+            title={project.t}
+            description={project.d}
+            features={project.features}
+            skills={project.skills}
             cover={project.img}
             tag={project.tag} 
-            url={project.img}
+            url={project.url}
             bg={project.bg ? (project.bg) : "#D2F3F4"}
           /> )
         })}

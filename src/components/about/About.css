@@ -51,12 +51,12 @@
 /* 3d */
 
 .rotator {
-    padding: 2em;
+    padding: 1em;
     left: 0;
     right: 0;
     margin: auto;
-    width: 55%;
-    height: 200px;
+    width: 65%;
+    height: 250px;
 
     transform-style: preserve-3d;
     animation: roter 25s linear infinite;
@@ -127,6 +127,15 @@
       .items img {
         width: 100%;
       }
+      .absolute-column-img{
+        display: none;
+      }
+      .about-text{
+        font-size: 1rem;
+      }
+    .a{
+      padding: 0px
+    }
 }
 @media screen and (min-width: 520px) and (max-width: 999px) {
     .rotator {
@@ -142,6 +151,9 @@
         height: 100%;
         width: 100%;
         transition: all 3s ease;
+    }
+    .absolute-column-img{
+      display: none;
     }
 }
 @media (max-width: 1000px) {
