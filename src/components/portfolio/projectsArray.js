@@ -3,6 +3,7 @@ import b2 from "../svgs/b2.svg"
 import w2 from "../svgs/w2.svg"
 import m from "../svgs/m.svg"
 import L from "../../img/Landing.png"
+import ML from "../../img/ml.png"
 
 
 export const projectsArray = [
@@ -19,7 +20,7 @@ export const projectsArray = [
   },
   {
     id: 2,
-    img: b2,
+    img: ML,
     t: "ML Challenge",
     d: "Front-end -take home project- built with Chakra UI & Typescriptesponsive Landing page for Local Bussiness",
     skills: "React.js, Chakra-UI, Typescript",
