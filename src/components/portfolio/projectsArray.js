@@ -22,7 +22,7 @@ export const projectsArray = [
     id: 2,
     img: ML,
     t: "ML Challenge",
-    d: "Front-end -take home project- built with Chakra UI & Typescriptesponsive Landing page for Local Bussiness",
+    d: "Front-end (take home project) built with Chakra UI & Typescript",
     skills: "React.js, Chakra-UI, Typescript",
     url: "https://tinchopapa56.github.io/6_MLchallenge/",
     tag: "🏆 Challenge: FRONTEND",
